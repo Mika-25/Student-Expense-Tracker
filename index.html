@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Expense Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <div>
+                <h1>💸 Student Expense Tracker</h1>
+                <p>Track your money. Manage your expenses. Stay in control.</p>
+            </div>
+        </header>
+
+
+        <!-- Budget Section -->
+        <section class="budget-section">
+
+            <h2>💰 Monthly Budget</h2>
+
+            <div class="budget-input">
+                <input 
+                    type="number" 
+                    id="budgetInput" 
+                    placeholder="Enter your monthly budget"
+                    min="0"
+                >
+
+                <button onclick="setBudget()">Set Budget</button>
+            </div>
+
+        </section>
+
+
+        <!-- Dashboard Cards -->
+        <section class="dashboard">
+
+            <div class="card budget-card">
+                <span>💰 Total Budget</span>
+                <h2>₹<span id="totalBudget">0</span></h2>
+            </div>
+
+            <div class="card expense-card">
+                <span>💸 Total Spent</span>
+                <h2>₹<span id="totalSpent">0</span></h2>
+            </div>
+
+            <div class="card balance-card">
+                <span>💵 Remaining</span>
+                <h2>₹<span id="remainingBalance">0</span></h2>
+            </div>
+
+        </section>
+
+
+        <!-- Add Expense -->
+        <section class="expense-form">
+
+            <h2>➕ Add New Expense</h2>
+
+            <div class="form-grid">
+
+                <div class="input-group">
+                    <label>Expense Name</label>
+                    <input 
+                        type="text" 
+                        id="expenseName" 
+                        placeholder="Eg: Lunch"
+                    >
+                </div>
+
+
+                <div class="input-group">
+                    <label>Amount</label>
+                    <input 
+                        type="number" 
+                        id="expenseAmount" 
+                        placeholder="Eg: 150"
+                        min="0"
+                    >
+                </div>
+
+
+                <div class="input-group">
+                    <label>Category</label>
+
+                    <select id="expenseCategory">
+
+                        <option value="Food">🍔 Food</option>
+                        <option value="Transport">🚌 Transport</option>
+                        <option value="Education">📚 Education</option>
+                        <option value="Shopping">🛍️ Shopping</option>
+                        <option value="Entertainment">🎮 Entertainment</option>
+                        <option value="Other">📦 Other</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="input-group">
+                    <label>Date</label>
+
+                    <input 
+                        type="date" 
+                        id="expenseDate"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <button class="add-button" onclick="addExpense()">
+                ➕ Add Expense
+            </button>
+
+        </section>
+
+
+        <!-- Expense History -->
+        <section class="expense-history">
+
+            <div class="section-heading">
+
+                <h2>📋 Expense History</h2>
+
+                <select id="filterCategory" onchange="displayExpenses()">
+
+                    <option value="All">All Categories</option>
+                    <option value="Food">🍔 Food</option>
+                    <option value="Transport">🚌 Transport</option>
+                    <option value="Education">📚 Education</option>
+                    <option value="Shopping">🛍️ Shopping</option>
+                    <option value="Entertainment">🎮 Entertainment</option>
+                    <option value="Other">📦 Other</option>
+
+                </select>
+
+            </div>
+
+
+            <div id="expenseList">
+
+                <div class="empty-message">
+                    No expenses added yet.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <p>Student Expense Tracker • IDE Class Activity</p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

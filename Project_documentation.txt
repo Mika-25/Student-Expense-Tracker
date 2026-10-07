@@ -1,0 +1,175 @@
+STUDENT EXPENSE TRACKER
+
+IDE CLASS ACTIVITY
+
+1. TITLE
+
+Student Expense Tracker
+
+2. AIM
+
+To develop a simple web-based application that helps students manage their monthly budget and track their daily expenses.
+
+3. OBJECTIVE
+
+The main objectives of the project are:
+
+• To provide a simple method for recording daily expenses.
+• To help students monitor their monthly spending.
+• To calculate total expenses automatically.
+• To display the remaining budget.
+• To organize expenses according to different categories.
+• To provide an easy-to-use and responsive interface.
+
+4. INTRODUCTION
+
+Managing daily expenses is important for students because they often have a limited monthly budget. Keeping track of small expenses manually can become difficult.
+
+The Student Expense Tracker is a web-based application developed using HTML, CSS and JavaScript. It allows users to enter a monthly budget, record expenses, select categories and dates, and monitor their remaining balance.
+
+The application also uses browser Local Storage to save the user's data.
+
+5. TECHNOLOGIES USED
+
+HTML:
+HTML is used to create the structure of the webpage, including forms, buttons, headings, dashboard cards and the expense history.
+
+CSS:
+CSS is used to design the webpage. It provides the dark theme, layout, colors, spacing, buttons, cards and responsive design.
+
+JavaScript:
+JavaScript provides the functionality of the application. It performs calculations, adds and deletes expenses, filters categories and updates the dashboard.
+
+Local Storage:
+Local Storage is used to store the budget and expense information in the browser so that the data remains available after refreshing the webpage.
+
+6. SYSTEM REQUIREMENTS
+
+Hardware Requirements:
+
+• Computer or laptop
+• Keyboard and mouse
+• Minimum 2 GB RAM
+
+Software Requirements:
+
+• Visual Studio Code
+• Web browser such as Google Chrome, Microsoft Edge or Firefox
+• Windows, Linux or macOS
+
+7. MAIN FEATURES
+
+• Monthly budget management
+• Add new expenses
+• Expense categories
+• Expense date selection
+• Automatic expense calculation
+• Remaining balance calculation
+• Expense history
+• Category filtering
+• Delete expense option
+• Local Storage support
+• Responsive design
+• Dark-themed user interface
+
+8. WORKING OF THE APPLICATION
+
+Step 1:
+The user enters their monthly budget.
+
+Step 2:
+The entered budget is displayed on the dashboard.
+
+Step 3:
+The user enters the expense name, amount, category and date.
+
+Step 4:
+JavaScript stores the expense information and updates the dashboard.
+
+Step 5:
+The application calculates the total amount spent.
+
+Step 6:
+The remaining balance is calculated by subtracting the total expenses from the monthly budget.
+
+Step 7:
+The expenses are displayed in the expense history section.
+
+Step 8:
+The user can filter expenses according to category or delete an expense when required.
+
+Step 9:
+The data is stored using Local Storage so that it remains available after refreshing the webpage.
+
+9. ALGORITHM
+
+10. Start the application.
+
+11. Load the previously saved budget and expenses from Local Storage.
+
+12. Display the dashboard.
+
+13. Enter the monthly budget.
+
+14. Save the budget.
+
+15. Enter expense details.
+
+16. Validate the entered information.
+
+17. Add the expense to the expense list.
+
+18. Calculate the total expenses.
+
+19. Calculate the remaining balance.
+
+20. Display the updated expense history.
+
+21. Allow the user to filter or delete expenses.
+
+22. Save updated information to Local Storage.
+
+23. Stop.
+
+24. ADVANTAGES
+
+• Easy to use.
+• Simple and user-friendly interface.
+• Helps students monitor their spending.
+• Reduces the need for manual calculations.
+• Works directly in a web browser.
+• Does not require a database.
+• Data can be stored locally in the browser.
+• Responsive on smaller screens.
+
+11. LIMITATIONS
+
+• Data is stored only in the user's browser.
+• The application does not have an online account system.
+• Expenses are not synchronized between different devices.
+• The application does not connect to bank accounts or payment applications.
+
+12. FUTURE ENHANCEMENTS
+
+The application can be improved in the future by adding:
+
+• User login and authentication.
+• Cloud database storage.
+• Monthly and yearly spending reports.
+• Graphs and charts.
+• Expense reminders.
+• Exporting expenses as PDF or Excel files.
+• Automatic backup and synchronization.
+• AI-based spending suggestions.
+
+13. RESULT
+
+The Student Expense Tracker was successfully developed using HTML, CSS and JavaScript.
+
+The application allows users to set a monthly budget, record expenses, calculate total spending, view the remaining balance, filter expenses and delete records.
+
+14. CONCLUSION
+
+The Student Expense Tracker provides a simple solution for managing student expenses. The project demonstrates the use of HTML for webpage structure, CSS for design and JavaScript for implementing interactive functionality.
+
+The project also demonstrates the practical use of Local Storage for saving information within a web browser.
